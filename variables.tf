@@ -1,7 +1,15 @@
 # variables.tf
 
-# AWS credentials are sourced from different locations. See
-# https://www.terraform.io/docs/providers/aws/ for details.
+# AWS credentials are sourced from different locations. I'd recommend adding a
+# local file terraform.tfvars next to variables.tf, but do NOT check it in. If
+# found, Terraform will load that file automatically. Git already ignores it in
+# this repo.
+#
+# Make it look like this, with your credentials and without the leading #'s.
+# See https://www.terraform.io/docs/providers/aws/ for more details.
+#
+# access_key = "your-access-key"
+# secret_key = "your-secret-key"
 #
 variable "access_key" {}
 variable "secret_key" {}
