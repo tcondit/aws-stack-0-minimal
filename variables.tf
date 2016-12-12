@@ -41,5 +41,5 @@ variable "amis" {
 #
 variable "key_name" {
     description = "Name of the SSK key pair to use in AWS"
-    default = "fubar"
+    default = "hashicorp_2016_11"
 }
