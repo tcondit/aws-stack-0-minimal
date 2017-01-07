@@ -12,7 +12,7 @@ provider "aws" {
 }
 
 resource "aws_instance" "build_server" {
-    count          = 1
+    count          = 2
     ami            = "${lookup(var.amis, var.region)}"
     instance_type  = "t2.micro"
     key_name       = "${var.key_name}"

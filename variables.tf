@@ -30,6 +30,7 @@ variable "amis" {
     type = "map"
     default = {
         us-east-1 = "ami-bcfac8ab"
+        #us-east-1 = "ami-a93631be" # ubuntu/trusty 14.04 LTS
         us-west-2 = "ami-73208f13"
     }
 }
